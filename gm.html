@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+    <style>
+        #game-container {
+  position: relative;
+  height: 600px;
+}
+
+.moving-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: zigzag 5s infinite;
+}
+
+@keyframes zigzag {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 300px;
+    top: 100px;
+  }
+  50% {
+    left: 600px;
+  }
+  75% {
+    left: 300px;
+    top: 200px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+#spear {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#rainbow-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#rainbow-button:hover {
+  cursor: pointer;
+}
+
+#rainbow-button:active {
+  transform: scale(0.9);
+}
+
+.rainbow-color-1 {
+  background-color: red;
+}
+
+.rainbow-color-2 {
+  background-color: orange;
+}
+
+.rainbow-color-3 {
+  background-color: yellow;
+}
+
+.rainbow-color-4 {
+  background-color: green;
+}
+
+.rainbow-color-5 {
+  background-color: blue;
+}
+
+.rainbow-color-6 {
+  background-color: indigo;
+}
+
+.rainbow-color-7 {
+  background-color: violet;
+}
+
+    </style>
+  <head>
+    <title>Zigzag Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="game-container">
+      <img id="spear" src="spear.png">
+      <div class="moving-images">
+        <img src="image1.png">
+      </div>
+      <div class="moving-images">
+        <img src="image2.png">
+      </div>
+      <div class="moving-images">
+        <img src="image3.png">
+      </div>
+      <div class="moving-images">
+        <img src="image4.png">
+      </div>
+      <div class="moving-images">
+        <img src="image5.png">
+      </div>
+    </div>
+
+    <button id="rainbow-button"></button>
+  </body>
+</html>
+
+
+</body>
+<script>
+    const images = document.querySelectorAll('.moving-images');
+const spear = document.getElementById('spear');
+let score = 0;
+
+// Add event listener to the spear
+spear.addEventListener('click', function() {
+  let hit = false;
+
+  // Check if spear hits any of the images
+  images.forEach(function(image) {
+    if (isColliding(spear, image)) {
+      hit = true;
+      score++;
+      showPopup('You have killed it!');
+      image.style.display = 'none';
+    }
+  });
+
+  if (!hit) {
+    showPopup('Woo, you are not a sharpshooter!');
+    score = 0;
+  }
+});
+
+// Function to check if two elements are colliding
+function isColliding(element1, element2) {
+  let rect1 = element1.getBoundingClientRect();
+  let rect2 = element2.getBoundingClientRect();
+
+  return !(rect1.right < rect2.left ||
+           rect1.left > rect2.right ||
+           rect1.bottom < rect2.top ||
+           rect1.top > rect2.bottom);
+}
+
+// Function to show popup message
+function showPopup(message) {
+  let popup = document.createElement('div');
+  popup.classList.add('popup');
+  popup.textContent = message;
+  document.body.appendChild(popup);
+  setTimeout(function() {
+    document.body.removeChild(popup);
+  }, 2000);
+}
+const rainbowButton = document.getElementById('rainbow-button');
+
+let colorIndex = 0;
+
+rainbowButton.addEventListener('click', () => {
+  const colors = ['rainbow-color-1', 'rainbow-color-2', 'rainbow-color-3', 'rainbow-color-4', 'rainbow-color-5', 'rainbow-color-6', 'rainbow-color-7'];
+  rainbowButton.classList.remove(colors[colorIndex]);
+  colorIndex = (colorIndex + 1) % colors.length;
+  rainbowButton.classList.add(colors[colorIndex]);
+});
+
+</script>
+</html>

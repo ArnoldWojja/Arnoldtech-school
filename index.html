@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Reset Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+	font-family: Arial;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+header {
+	background-color: #000;
+	color: #0072C6;
+	padding: 20px;
+	box-shadow: 0px 1px 10px rgba(243, 200, 243, 0.1);
+	padding-top: 5px;
+	border-radius: none;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #0072C6;
+	text-decoration: none;
+	padding-left: 40px;
+}
+
+main {
+	width: 100%;
+	margin: 0px auto;
+	padding-left: 0px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: #516674;
+	font-family:  Arial;
+	padding-left: 80px;
+}
+footer {
+	background-color: #000;
+	padding: 20px;
+	text-align: center;
+	width: 1300px;
+	color: #fff;
+}
+a:hover{
+	color: green;
+
+}
+h1{
+	
+	padding-bottom: 23px;
+}
+h1 img{
+	height: 60px;
+	width: 200px;
+	padding-bottom: 0px;
+	text-align: center;
+	border-radius: 2px;
+}
+img{
+	width: 1300px;
+}
+.links{
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+}
+footer img{
+	border-radius: 50%;
+	width: 60px;
+	height: 53px;
+}
+.lo img{
+	height: 60px;
+	width: 200px;
+	color: #f78f29;
+	background-color: #f78f29;
+	border-radius: 2px;
+}
+
+</style>
+<body>
+    <header>
+		<h1>Welcome to Limkokwing University<img src="car.jfif"> Of Creative Technology - Uganda Campus</h1>
+		<nav>
+			<ul>
+				<li class="hero"><a href="index.html">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="Admission.html">Admissions</a></li>
+				<li><a href="acad.html">Academics</a></li>
+				<li><a href="StudentLife.html">Student Life</a></li>
+				<li><a href="#">Campus Resources</a></li>
+				<li><a href="#">News and Events</a></li>
+				<li><a href="Contact Us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<img src="car.jfif">
+	<main>
+		<i>
+		<section id="mysection"
+		style="background: papayawhip;
+			   padding: 20px;
+			   width: 1300px;
+			   line-height: 1.7em;">
+	<button onclick="Changebgcolor();">Change bgcolor style</button>	<h2>Our Mission</h2> 
+		<p><b><i>Liverpool</i></b> we kill for more information go to <i><b>Manchester United Fans</i></b> and you get to know how
+			dangerous we are. I even don`t remember the goals we scored but I think we scored more than <b>Seven</b>
+	(7) goals then I lost control and went to sleep, now don`t know what happened. Please 
+	any good samalitan to remind me about the score line of that match , Thanks!. I will be happy
+	to here from you(<b>red devils</b>). haha ha Next time <b>you will never walk alone</b>
+</p>
+		<h2>Featured Program</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Praesent ultrices, felis sit amet blandit fringilla,
+			 mauris dolor lobortis nunc, a lacinia augue ex vel ipsum.
+			 Pellentesque vitae velit hendrerit, viverra mi vel, gravida metus.
+			  Curabitur euismod elit et blandit placerat.</p>
+        <h2>Our Values</h2>
+			<ul>
+				<li>Excellence</li>
+				<li>Innovation</li>
+				<li>Diversity</li>
+				<li>Community</li>
+				<li>Integrity</li>
+				
+			</ul>
+		</section>
+	</main>
+</i>
+	<footer>
+		<div class="links">
+		<div class="sap"><img src="whatsApp.jpg"></div>
+		<div class="twit"><img src="twitter.jpg"></div>
+		<div class="lo"><img src="car.jfif"></div>
+		<div class="tube"><img src="youtube.jpg"></div>
+		<div class="face"><img src="facebook.jfif"></div>
+	</div>
+		<p>&copy; 2023 LUCT University. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+</body>
+<script>
+    let Changebgcolor = () => {
+       let element = document.getElementById("mysection");
+  
+       if (element.style.backgroundColor === "papayawhip") {
+         element.style.backgroundColor = "#222";
+         element.style.color = "white";
+      } else {
+         element.style.backgroundColor = "papayawhip";
+         element.style.color = "black";
+      }
+    }
+</script>
+</html>

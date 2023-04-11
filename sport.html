@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			background-color: #F2F2F2;
+			color: #333;
+		}
+
+		header {
+			background-color: #333;
+			color: #FFF;
+			padding: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 28px;
+			font-weight: normal;
+			letter-spacing: 2px;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+		}
+
+		nav li {
+			margin-left: 20px;
+		}
+
+		nav a {
+			color: #FFF;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			transition: all 0.3s ease;
+		}
+
+		nav a:hover {
+			color: #FFD700;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 100px auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		section {
+			flex-basis: calc(33.33% - 20px);
+			margin-bottom: 40px;
+			background-color: #FFF;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			transition: all 0.3s ease;
+		}
+
+		section:hover {
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+			transform: translateY(-5px);
+		}
+
+		h2 {
+			margin: 0;
+			padding: 10px;
+			background-color: #333;
+			color: #FFF;
+			font-size: 24px;
+			text-align: center;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		p {
+			padding: 10px;
+			font-size: 16px;
+			line-height: 1.5;
+			text-align: justify;
+		}
+
+		a {
+			color: #333;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		a:hover {
+			color: #FFD700;
+			text-decoration: underline;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #FFF;
+			text-decoration: none;
+			font-weight: bold;
+			letter-spacing: 2px;
+			border-radius: 5px;
+			margin-top: 10px;
+			transition: all 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #FFD700;
+			color: #333;
+			cursor:pointer;
+        }
+        body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			background-color: #F2F2F2;
+			color: #333;
+		}
+
+		header {
+			background-color: #333;
+			color: #FFF;
+			padding: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 28px;
+			font-weight: normal;
+			letter-spacing: 2px;
+		}
+
+		nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+		}
+
+		nav li {
+			margin-left: 20px;
+		}
+
+		nav a {
+			color: #FFF;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+			transition: all 0.3s ease;
+		}
+
+		nav a:hover {
+			color: #FFD700;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 100px auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		section {
+			flex-basis: calc(33.33% - 20px);
+			margin-bottom: 40px;
+			background-color: #FFF;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			transition: all 0.3s ease;
+			position: relative;
+		}
+
+		section:before {
+			content: "";
+			position: absolute;
+			top: -10px;
+			left: -10px;
+			right: -10px;
+			bottom: -10px;
+			background-color: rgba(255, 215, 0, 0.3);
+			z-index: -1;
+		}
+
+		section:hover {
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+			transform: translateY(-5px);
+		}
+
+		h2 {
+			margin: 0;
+			padding: 10px;
+			background-color: #333;
+			color: #FFF;
+			font-size: 24px;
+			text-align: center;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border: 5px solid #FFF;
+			box-sizing: border-box;
+			margin: 10px auto;
+			max-height: 150px;
+			object-fit: cover;
+		}
+
+		p {
+			padding: 10px;
+			font-size: 16px;
+			line-height: 1.5;
+			text-align: justify;
+		}
+
+		a {
+			color: #333;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		a:hover {
+			color: #FFD700;
+		}
+</style>
+<body>
+
+    
+		<h1>University of Example</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="admissions.html">Admissions</a></li>
+				<li><a href="academics.html">Academics</a></li>
+				<li><a href="games.html">Games and Sports</a></li>
+				<li><a href="clubs.html">Clubs and Organizations</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Football</h2>
+			<img src="football.jpg" alt="Football">
+			<p>Football is the most popular sport at our university, and we have a highly competitive team that regularly competes in national tournaments. Visit our <a href="football.html">Football page</a> for more information.</p>
+		</section>
+		<section>
+			<h2>Basketball</h2>
+			<img src="basketball.jpg" alt="Basketball">
+			<p>Basketball is another popular sport at our university, and we have both men's and women's teams that regularly compete in national tournaments. Visit our <a href="basketball.html">Basketball page</a> for more information.</p>
+		</section>
+		<section>
+			<h2>Volleyball</h2>
+			<img src="volleyball.jpg" alt="Volleyball">
+			<p>Volleyball is a popular sport at our university,
+
+</body>
+</html>

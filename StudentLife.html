@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life | University Name</title>
+</head>
+<style>
+    /* Body Styling */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation Menu Styling */
+nav {
+	background-color: rgb(255, 255, 255);
+	color: gray;
+	height: 80px;
+	padding-top: 15px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+nav li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav ul li a {
+  color: #3e3e3e;
+  text-decoration: none;
+  
+}
+
+.hero {
+  background-image: url('E:\ARNOLDTECH SCHOOL\car.jfif');
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+ul {
+  margin: 1rem 0 2rem 1.5rem;
+  list-style-type: disc;
+}
+
+footer {
+	text-align: center;
+}
+ a:hover{
+	color: blue;
+ }
+ section {
+			flex-basis: 45%;
+			margin-bottom: 20px;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		}
+h1{
+	text-align: center;
+}
+a{
+	color: #3e3e3e;
+}
+</style>
+<body>
+	<!-- Navigation Menu -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="acad.html">Academics</a></li>
+			<li><a href="studentlife.html">Student Life</a></li>
+			<li><a href="Admission.html">Admissions</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</nav>
+
+	<!-- Banner -->
+	<div class="banner">
+		<h1>Student Life </h1>
+	</div>
+
+	<!-- Main Content -->
+	<main>
+		<section>
+			<h2>Clubs and Organizations</h2>
+			<p>Our university offers a wide range of clubs and organizations for students to get involved in. Whether you're interested in sports, music, art, or community service, there's something for everyone.</p>
+			<ul>
+				<li><a href="#">Student Government Association</a></li>
+				<li><a href="#">Drama Club</a></li>
+				<li><a href="#">International Student Organization</a></li>
+				<li><a href="#">Environmental Club</a></li>
+				<li><a href="#">Soccer Club</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Campus Events</h2>
+			<p>We host a variety of events throughout the year to help students connect and have fun. From movie nights and game tournaments to cultural festivals and guest speakers, there's always something happening on campus.</p>
+			<ul>
+				<li><a href="#">Fall Fest</a></li>
+				<li><a href="#">Spring Fling</a></li>
+				<li><a href="#">International Food Festival</a></li>
+				<li><a href="#">Comedy Night</a></li>
+				<li><a href="#">Career Fair</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Housing and Dining</h2>
+			<p>Our university offers on-campus housing and dining options for students who want to live and eat on campus. We have a variety of dorm styles and meal plans to choose from, so you can find the right fit for your needs and preferences.</p>
+			<ul>
+				<li><a href="#">Housing Options</a></li>
+				<li><a href="#">Meal Plans</a></li>
+				<li><a href="#">Campus Dining Locations</a></li>
+				<li><a href="#">Residence Life Policies</a></li>
+			</ul>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2023 LUCT University. All rights reserved.</p>
+	</footer>
+</body>
+<script>
+    let colors = ["lightgray", "lightgray", "lightgray", "lightgray"];
+let currentIndex = 0;
+setInterval(function() {
+document.body.style.backgroundColor = colors[currentIndex];
+currentIndex = (currentIndex + 1) % colors.length;
+}, 900);
+</script>
+</html>

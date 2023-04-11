@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    header {
+    background-color: #0072C6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+a {
+    display: block;
+    color: #0072C6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    margin: 10px;
+    max-width: 300px;
+    max-height: 200px;
+}
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #0072C6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+/* Main section styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    color: #0072C6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.club-logo {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.event-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.event-card__image {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.event-card__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card__title {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+}
+
+.event-card__date {
+    font-size: 1.2em;
+    color: #999;
+    margin: 0;
+}
+
+.event-card__location {
+    font-size: 1.2em;
+    margin: 5px 0 0 0;
+}
+
+.event-card__description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    margin: 10px;
+    max-width: 300px;
+    max-height: 200px;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Default color */
+    transition: background-color 1s ease-in-out; /* Transition effect */
+}
+
+</style>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clubs and Organizations</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Clubs and Organizations</h1>
+        </header>
+    
+        <main>
+            <section>
+                <h2>List of Clubs and Organizations</h2>
+                <ul>
+                    <li><a href="club-page1.html"><img src="car.jfif" alt="Club Logo">Club Name 1</a> - Brief description of Club 1</li>
+                    <li><a href="club-page2.html"><img src="car.jfif" alt="Club Logo">Club Name 2</a> - Brief description of Club 2</li>
+                    <li><a href="club-page3.html"><img src="car.jfif" alt="Club Logo">Club Name 3</a> - Brief description of Club 3</li>
+                
+            </section>
+    
+            <section>
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Event Name 1 - Date and Time - Location - Brief description of event</li>
+                    <li>Event Name 2 - Date and Time - Location - Brief description of event</li>
+                    <li>Event Name 3 - Date and Time - Location - Brief description of event</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Club and Organization Photos</h2>
+                <div class="gallery">
+                    <img src="c.JPG" alt="Club Photo">
+                    <img src="c.JPG" alt="Club Photo">
+                    <img src="c.JPG" alt="Club Photo">
+                    <img src="c.JPG" alt="Club Photo">
+                    <img src="c.JPG" alt="Club Photo">
+                    <img src="c.JPG" alt="Club Photo">
+                    <img src="c.JPG" alt="Club Photo">
+                </div>
+            </section>
+        </main>
+    </body>
+    </html>
+    
+
+
+</body>
+<script>
+    let colors = ["purple", "greenyellowish", "red", "pink"];
+let currentIndex = 0;
+setInterval(function() {
+document.body.style.backgroundColor = colors[currentIndex];
+currentIndex = (currentIndex + 1) % colors.length;
+}, 900);
+</script>
+</html>

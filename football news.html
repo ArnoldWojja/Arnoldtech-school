@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Page</title>
+</head>
+<style>
+    /* Header */
+header {
+  background-color: #091D3C;
+  color: #FFF;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Banner */
+.banner {
+  background-image: url('football-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.banner h2 {
+  font-size: 48px;
+  color: #FFF;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* Footer */
+footer {
+  background-color: #091D3C;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+</style>
+<body>
+
+<!-- Main header -->
+<header class="header">
+    <h1 class="title">Football News</h1>
+  </header>
+
+  <!-- Banner image -->
+  <img src="banner.jpg" alt="Football banner" width="100%">
+
+  <!-- Main content area -->
+  <div class="content">
+    <!-- Football news item -->
+    <div class="news">
+      <img src="news1.jpg" alt="Football news 1">
+      <h2>Match Recap: Arsenal vs. Manchester United</h2>
+      <p>Arsenal and Manchester United played to a 1-1 draw in a thrilling match at Old Trafford.</p>
+    </div>
+
+    <!-- Football news item -->
+    <div class="news">
+      <img src="news2.jpg" alt="Football news 2">
+      <h2>Lionel Messi Wins Record Seventh Ballon d'Or Award</h2>
+      <p>Lionel Messi has won the Ballon d'Or for a record seventh time, cementing his place as one of the greatest footballers of all time.</p>
+    </div>
+
+    <!-- Football news item -->
+    <div class="news">
+      <img src="news3.jpg" alt="Football news 3">
+      <h2>UEFA Champions League Quarterfinals Draw Revealed</h2>
+      <p>The UEFA Champions League quarterfinals draw has been revealed, with some exciting matchups to look forward to.</p>
+    </div>
+
+    <!-- Football image gallery -->
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Football image 1">
+      <img src="gallery2.jpg" alt="Football image 2">
+      <img src="gallery3.jpg" alt="Football image 3">
+      <img src="gallery4.jpg" alt="Football image 4">
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="football-1.jpg" alt="Football 1">
+    <img src="football-2.jpg" alt="Football 2">
+    <img src="football-3.jpg" alt="Football 3">
+    <img src="football-4.jpg" alt="Football 4">
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2023 Football University</p>
+  </footer>
+
+</body>
+</html>
